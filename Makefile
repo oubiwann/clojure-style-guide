@@ -1,5 +1,6 @@
 INFILE = README.md
 OUTPUT = build
+DOWNLOAD = download
 OUTFILE = $(OUTPUT)/clojure-style-guide
 TITLE = "The Clojure Style Guide"
 
@@ -8,8 +9,11 @@ PDFFILE = $(OUTFILE).pdf
 EPUBFILE = $(OUTFILE).epub
 MOBIFILE = $(OUTFILE).mobi
 
-all: html pdf epub mobi
+all: html epub mobi pdf
 clean: clean-html clean-pdf clean-epub clean-mobi
+
+update: all
+	cp $(OUTPUT)/* $(DOWNLOAD)/
 
 $(OUTPUT):
 	mkdir -p $(OUTPUT)
@@ -58,7 +62,7 @@ clean-pdf:
 
 ### EPUB Targets #############################################################
 
-epub:
+epub: $(OUTPUT)
 	pandoc -f markdown_github -t epub -o $(EPUBFILE) $(INFILE)
 
 clean-epub:
