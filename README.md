@@ -3,6 +3,7 @@
 ## Table of Contents
 
 * [Preable](#preable)
+    * [Downloads](#downloads)
     * [Builds](#builds)
         * [Dependencoies](#dependencies)
         * [Supported Formats](#supported-formats)
