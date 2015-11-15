@@ -1,5 +1,27 @@
 # The Clojure Style Guide
 
+## Table of Contents
+
+* [Preable](#preable)
+    * [Builds](#builds)
+        * [Dependencoies](#dependencies)
+        * [Supported Formats](#supported-formats)
+    * [Translations](#translations)
+* [Source Code Organization](#source-code-organization)
+* [Syntax](#syntax)
+* [Naming](#naming)
+* [Collections](#collections)
+* [Mutation](#mutation)
+* [Strings](#strings)
+* [Exceptions](#exceptions)
+* [Macros](#macros)
+* [Comments](#comments)
+    * [Comment Annotations](#comment-annotations)
+* [Existential](#existential)
+* [Tooling](#tooling)
+
+## Preamble
+
 > Role models are important. <br/>
 > -- Officer Alex J. Murphy / RoboCop
 
@@ -29,28 +51,45 @@ Please note, that the Clojure developing community maintains a list of
 [coding standards for libraries](http://dev.clojure.org/display/community/Library+Coding+Standards),
 too.
 
-You can generate a PDF or an HTML copy of this guide using
-[Transmuter](https://github.com/TechnoGate/transmuter).
+### Builds
+
+You may build document versions of this guide using various ``make`` targets.
+
+#### Dependencies
+
+In order use these, your system will need to have various dependencies
+installed. You may do that with the following:
+
+```bash
+$ make ubuntu-deps
+$ make python-deps
+```
+
+Right now the Makefile installs dependencies for Ubuntu only. If you are
+using a different OS, viewing the dependency targets in the Makefile will
+provide you with the clues to either install them for your OS or submit a patch
+so that your OS is supported.
+
+#### Supported Formats
+
+You can generate copies of this document in PDF, HTML, EPUB, or MOBI formats
+using the following:
+
+```bash
+$ make html
+$ make pdf
+$ make epub
+$ make mobi
+```
+
+Optionally, you may generate all of them with either ``make`` or ``make all``.
+
+### Translations
 
 Translations of the guide are available in the following languages:
 
 * [Japanese](https://github.com/totakke/clojure-style-guide/blob/ja/README.md)
 * [Korean](https://github.com/kwakbab/clojure-style-guide/blob/master/README-koKO.md)
-
-## Table of Contents
-
-* [Source Code Organization](#source-code-organization)
-* [Syntax](#syntax)
-* [Naming](#naming)
-* [Collections](#collections)
-* [Mutation](#mutation)
-* [Strings](#strings)
-* [Exceptions](#exceptions)
-* [Macros](#macros)
-* [Comments](#comments)
-    * [Comment Annotations](#comment-annotations)
-* [Existential](#existential)
-* [Tooling](#tooling)
 
 ## Source Code Organization
 
