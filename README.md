@@ -39,7 +39,7 @@ Translations of the guide are available in the following languages:
 
 ## Table of Contents
 
-* [Source Code Layout & Organization](#source-code-layout--organization)
+* [Source Code Organization](#source-code-organization)
 * [Syntax](#syntax)
 * [Naming](#naming)
 * [Collections](#collections)
@@ -52,7 +52,7 @@ Translations of the guide are available in the following languages:
 * [Existential](#existential)
 * [Tooling](#tooling)
 
-## Source Code Layout & Organization
+## Source Code Organization
 
 > Nearly everybody is convinced that every style but their own is
 > ugly and unreadable. Leave out the "but their own" and they're
