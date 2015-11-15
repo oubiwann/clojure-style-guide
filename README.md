@@ -39,13 +39,19 @@ The guide is still a work in progress; some sections are missing, others are inc
 
 Please note, that the Clojure developing community maintains a list of [coding standards for libraries](http://dev.clojure.org/display/community/Library+Coding+Standards), too.
 
-### Builds
+### Downloads
 
-You may build document versions of this guide using various ``make`` targets.
+HTML, PDF, and various ebook formats of this document are available here:
+
+* https://github.com/oubiwann/clojure-style-guide/tree/master/download
+
+### Building
+
+You may build document versions of this guide using various ``make`` targets supplied in the ``Makefile``. In order use these, your system will need to have various dependencies installed.
 
 #### Dependencies
 
-In order use these, your system will need to have various dependencies installed. You may do that with the following:
+Build dependencies on Ubuntu may be satisfied with the following:
 
 ```bash
 $ make ubuntu-deps
